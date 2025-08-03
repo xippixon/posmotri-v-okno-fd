@@ -91,10 +91,11 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  max-width: 194px;
-  max-height: 103px;
+  min-width: 194px;
+  height: 103px;
   object-fit: cover;
   object-position: center;
+  
   
 }
 
@@ -117,6 +118,7 @@ ol {
 .content__list-item {
   width: 100%;
   padding: 0 3px;
+  
   
 }
 
@@ -159,7 +161,7 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 170px;
+  max-width: 140px;
   padding-top: 5px;
 }
 
@@ -198,7 +200,7 @@ ol {
   width: fit-content;
   gap: 3.5px;
   cursor: pointer;
-  padding-top: 6px;
+  padding-top: 5px;
 }
 .search-form__textfield {
   border-top: 1px solid #fff;
@@ -213,6 +215,10 @@ ol {
   background-color: transparent;
   inline-size: 225px;
   
+}
+
+.search-form__textfield:focus {
+  outline: none;
 }
 
 .search-form__textfield::placeholder {
